@@ -10,6 +10,9 @@
 # Ignore pow environment settings
 .powenv
 
+# Ignore environment settings
+.env
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
