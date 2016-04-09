@@ -6,7 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module Thief
+module Template
   class Application < Rails::Application
 
     # Configure sensitive parameters which will be filtered from the log file.
