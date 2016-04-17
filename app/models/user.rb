@@ -7,6 +7,7 @@ class User < ApplicationRecord
 
   has_secure_password
 
+  has_paper_trail skip: [:updated_at, :created_at, :password_digest]
 
   # == Relationships ========================================================
 
