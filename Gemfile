@@ -33,6 +33,10 @@ gem "haml-rails", "~> 0.9"
 
 # # Form Gem
 gem 'simple_form', '~> 3.2'
+
+# # Versioning
+gem 'paper_trail', '~> 4.0'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 group :production, :test do
@@ -42,10 +46,11 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'pry-rails'
   # gem 'pry-byebug'
   %w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
-	  gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'master'
-	end
+    gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'master'
+  end
 end
 
 group :development do
