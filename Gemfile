@@ -31,6 +31,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem "haml-rails", "~> 0.9"
 
+# # Form Gem
+gem 'simple_form', '~> 3.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 group :production, :test do
